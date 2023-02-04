@@ -13,7 +13,7 @@ public class Projectile : MonoBehaviour
     void Start()
     {
         projectile.name = "bone";
-    }
+    } 
 
     // Update is called once per frame
     void Update()
@@ -27,13 +27,16 @@ public class Projectile : MonoBehaviour
             projInst = Instantiate(projectile, gameObject.transform.position, gameObject.transform.rotation);
             rb = projInst.GetComponent<Rigidbody>();
 
-            if (hori != 0 && vert != 0)
-            {
-                rb.AddForce(new Vector3(hori, 0.0f, vert) * projectilespeed, ForceMode.Impulse);
-            }
-            else
+            Debug.Log("Vert"+ vert);
+            Debug.Log("Hor" + hori);
+
+            if (hori == 0 && vert == 0)
             {
                 rb.AddForce(new Vector3(1.0f, 0.0f, 0.0f) * projectilespeed, ForceMode.Impulse);
+            }
+            else 
+            {
+                rb.AddForce(new Vector3(hori, 0.0f, vert) * projectilespeed, ForceMode.Impulse);
             }
             Destroy(projInst, 3.0f);
         }

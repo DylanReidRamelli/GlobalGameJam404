@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 8054962924546919045}
   - component: {fileID: -2565509948758351908}
   - component: {fileID: 2682730352077306379}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Projectile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -145,7 +145,7 @@ Animator:
   m_GameObject: {fileID: 3740826095267093}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: e750bcab08eff4b8980b84c4166745b3, type: 2}
+  m_Controller: {fileID: 9100000, guid: 9195d3bab9126421daec23fa3f7a0989, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

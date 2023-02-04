@@ -9,8 +9,7 @@ public class Enemy_Generator : MonoBehaviour
 
     public int maxNEnemies = 10;
     public GameObject enemyPrefab;
-    public GameObject playerPrefab;
-    private List<GameObject> enemyList;
+    public List<GameObject> enemyList;
 
 
     // Spawn Area
