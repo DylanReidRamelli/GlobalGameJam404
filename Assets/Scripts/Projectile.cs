@@ -6,7 +6,8 @@ public class Projectile : MonoBehaviour
 {
 
     public GameObject projectile;
-    public float projectilespeed = 10.0f;
+    public float projectilespeed = 50.0f;
+    private Rigidbody rb;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,15 +19,11 @@ public class Projectile : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
+           GameObject projInst = Instantiate(projectile, gameObject.transform.position, gameObject.transform.rotation);
 
-            GameObject bullet = Instantiate(projectile, gameObject.transform.position, Quaternion.identity) as GameObject;
-            Rigidbody bulletRB = bullet.GetComponent<Rigidbody>();
-            bulletRB.AddForce(Vector3.forward * projectilespeed);
-            Destroy(bullet, 0.5f);
-            //GameObject projInst = Instantiate(projectile, this.transform.position, this.transform.rotation);
-
-            //Rigidbody2D projectileRB = projInst.GetComponent<Rigidbody2D>();
-            //projectileRB.AddForce(this.transform.position * throwForce, ForceMode2D.Impulse);
+            rb = projInst.GetComponent<Rigidbody>();
+            rb.AddForce(new Vector3(1.0f,0.0f,0.0f) * projectilespeed, ForceMode.Impulse);
+            Destroy(projInst, 1.0f);
         }
         
     }
