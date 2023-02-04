@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 4f02f5eed49984940a0c27fcb240f747
+guid: 52b6e1e909507408c9b641a3907692da
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,10 +110,10 @@ TextureImporter:
       name: Bones_0
       rect:
         serializedVersion: 2
-        x: 112
-        y: 309
-        width: 381
-        height: 341
+        x: 92
+        y: 134
+        width: 182
+        height: 374
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -131,10 +131,10 @@ TextureImporter:
       name: Bones_1
       rect:
         serializedVersion: 2
-        x: 114
-        y: 92
-        width: 374
-        height: 182
+        x: 309
+        y: 129
+        width: 341
+        height: 381
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

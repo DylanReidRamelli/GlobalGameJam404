@@ -8,6 +8,7 @@ public class Projectile : MonoBehaviour
     public GameObject projectile;
     public float projectilespeed = 100.0f;
     private Rigidbody rb;
+    private GameObject projInst;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,12 +20,22 @@ public class Projectile : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-           GameObject projInst = Instantiate(projectile, gameObject.transform.position, gameObject.transform.rotation);
 
-            //gameObject.transform.LookAt(gameObject.transform.position + rb.velocity);
+            float hori = Input.GetAxisRaw("Horizontal");
+            float vert = Input.GetAxisRaw("Vertical");
+
+            projInst = Instantiate(projectile, gameObject.transform.position, gameObject.transform.rotation);
             rb = projInst.GetComponent<Rigidbody>();
-            rb.AddForce(new Vector3(1.0f,0.0f,0.0f) * projectilespeed, ForceMode.Impulse);
-            Destroy(projInst, 1.0f);
+
+            if (hori != 0 && vert != 0)
+            {
+                rb.AddForce(new Vector3(hori, 0.0f, vert) * projectilespeed, ForceMode.Impulse);
+            }
+            else
+            {
+                rb.AddForce(new Vector3(1.0f, 0.0f, 0.0f) * projectilespeed, ForceMode.Impulse);
+            }
+            Destroy(projInst, 3.0f);
         }
         
     }

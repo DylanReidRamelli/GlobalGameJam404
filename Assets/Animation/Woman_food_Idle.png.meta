@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 4f02f5eed49984940a0c27fcb240f747
+guid: 46d7d0f22c2a04d789213853319bfd26
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -107,13 +107,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Bones_0
+      name: Woman_food_Idle_0
       rect:
         serializedVersion: 2
-        x: 112
-        y: 309
-        width: 381
-        height: 341
+        x: 30
+        y: 39
+        width: 603
+        height: 704
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -121,20 +121,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7e14a2ba18ddc49de9a6b5f99669bab3
-      internalID: -545091691
+      spriteID: 4711e7d4489494f6b8a88d3c0b99eaeb
+      internalID: 1412334943
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bones_1
+      name: Woman_food_Idle_1
       rect:
         serializedVersion: 2
-        x: 114
-        y: 92
-        width: 374
-        height: 182
+        x: 722
+        y: 33
+        width: 611
+        height: 696
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -142,8 +142,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a40176042b0274cb1ba50d3a1ccca178
-      internalID: 1002542668
+      spriteID: 8f6a30e126a5e424f9793d5519be2a8a
+      internalID: 1399348824
       vertices: []
       indices: 
       edges: []
@@ -159,8 +159,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Bones_1: 1002542668
-      Bones_0: -545091691
+      Woman_food_Idle_0: 1412334943
+      Woman_food_Idle_1: 1399348824
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

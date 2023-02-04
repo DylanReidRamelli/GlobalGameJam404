@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 4f02f5eed49984940a0c27fcb240f747
+guid: 63e807da1e1f84d5bb470bfdf8d83e13
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -107,13 +107,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Bones_0
+      name: NPC_bones_idle_0
       rect:
         serializedVersion: 2
-        x: 112
-        y: 309
-        width: 381
-        height: 341
+        x: 548
+        y: 40
+        width: 588
+        height: 1097
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -121,20 +121,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7e14a2ba18ddc49de9a6b5f99669bab3
-      internalID: -545091691
+      spriteID: a847a2faf8ba04ef58513b2a0edc0fba
+      internalID: -1404685348
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bones_1
+      name: NPC_bones_idle_1
       rect:
         serializedVersion: 2
-        x: 114
-        y: 92
-        width: 374
-        height: 182
+        x: 1276
+        y: 50
+        width: 745
+        height: 1087
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -142,8 +142,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a40176042b0274cb1ba50d3a1ccca178
-      internalID: 1002542668
+      spriteID: 2908d96f9416744acab54a33bea6ae4e
+      internalID: -1166389116
       vertices: []
       indices: 
       edges: []
@@ -159,8 +159,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Bones_1: 1002542668
-      Bones_0: -545091691
+      NPC_bones_idle_0: -1404685348
+      NPC_bones_idle_1: -1166389116
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
