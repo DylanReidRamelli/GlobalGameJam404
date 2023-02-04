@@ -21,6 +21,7 @@ public class Projectile : MonoBehaviour
         {
            GameObject projInst = Instantiate(projectile, gameObject.transform.position, gameObject.transform.rotation);
 
+            //gameObject.transform.LookAt(gameObject.transform.position + rb.velocity);
             rb = projInst.GetComponent<Rigidbody>();
             rb.AddForce(new Vector3(1.0f,0.0f,0.0f) * projectilespeed, ForceMode.Impulse);
             Destroy(projInst, 1.0f);
