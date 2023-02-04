@@ -6,7 +6,7 @@ public class Projectile : MonoBehaviour
 {
 
     public GameObject projectile;
-    public float projectilespeed = 50.0f;
+    public float projectilespeed = 100.0f;
     private Rigidbody rb;
     // Start is called before the first frame update
     void Start()
